@@ -1,15 +1,15 @@
-let img;
+// let imgFinal;
 
-function preload() {
-	img = loadImage('assets/man.svg');
-}
+// function preload() {
+// 	imgFinal = loadImage('assets/finalCause.svg');
+// }
 
-class EfficientCause {
+class FinalCause {
 	constructor() {
-		this.x = 100;
-		this.y = 400;
-		this.w = 541;
-		this.h = 1050;
+		this.xText = 50;
+		this.yText = 1000;
+		this.xImg = 25;
+		this.yImg = 425;
 	}
 
 	// move() {
@@ -20,7 +20,7 @@ class EfficientCause {
 	display() {
 		textSize(32);
 		fill(205);
-		text('Efficient', this.x, this.y);
-		image(img, 250, 360, this.w, this.h);
+		text('Final', this.xText, this.yText);
+		// image(imgFinal, this.xImg, this.yImg);
 	}
 }

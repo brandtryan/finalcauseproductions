@@ -1,15 +1,15 @@
-let img;
+let imgEfficient;
 
 function preload() {
-	img = loadImage('assets/man.svg');
+	imgEfficient = loadImage('assets/efficientCause.svg');
 }
 
 class EfficientCause {
 	constructor() {
-		this.x = 100;
-		this.y = 400;
-		this.w = 541;
-		this.h = 1050;
+		this.xText = 50;
+		this.yText = 400;
+		this.xImg = 300;
+		this.yImg = 500;
 	}
 
 	// move() {
@@ -20,7 +20,7 @@ class EfficientCause {
 	display() {
 		textSize(32);
 		fill(205);
-		text('Efficient', this.x, this.y);
-		image(img, 250, 360, this.w, this.h);
+		text('Efficient', this.xText, this.yText);
+		// image(imgEfficient, this.xImg, this.yImg);
 	}
 }
